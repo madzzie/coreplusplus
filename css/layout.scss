@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+$grid-float-breakpoint: 992px;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* colors */
+$orange: #F97352;
+$header-grey: #494949;
+$font-grey: #333;
+$font-light-grey: #f2f2f2;
+
+/* universal */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+body {
+  padding-top: 92px;
+  margin-bottom: 150px;
+}
+
+label {
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+
+.unstyled-label {
+  text-transform: none !important;
+  font-weight: normal;
+}
+
+.emphasize-orange {
+  font-weight: bold;
+  color: #F97352;
+}
+
+blockquote {
+  font-size: 14px;
+}
+
+abbr[title="required"] {
+  color: red;
+  border-bottom: 0px;
+}
+
+.help-block {
+  font-size: 12px;
+}
+
+.btn-orange {
+  color: #fff !important;
+  background-color: #F97352;
+  border-color: #cc5c43;
+
+  &:hover {
+    background-color: #cc5c43;
+    border-color: #994332;
+  }
+}
+
+.fancy-well {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-color: #F97352;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.tags {
+  margin-top: 5px;
+
+  .glyphicon-tag {
+    color: #666;
+    margin-right: 2px;
+  }
+
+  .label-tag {
+    background-color: #FDFDFD;
+    border: 1px solid #888;
+    color: #6F6F6F;
+    font-weight: normal;
+    vertical-align: text-top;
+  }
+
+  .tags-expand {
+    background: none;
+    border: none;
+    border-bottom: 1px dotted #777777;
+    cursor: help;
+    padding: 0;
+  }
+}
+
+.attachment {
+  a:first-child {
+    border: 1px solid #bbb;
+    background-color: #FAFAFA;
+    padding: 4px;
+    color: #777;
+    text-decoration: none;
+
+    .glyphicon-paperclip {
+      margin-right: 4px;
+      color: #999;
+    }
+  }
+}
+
+.CodeMirror {
+    height: 320px !important;
+}
+
+#filter-container {
+  margin-top: 20px;
+
+  .glyphicon {
+    vertical-align: text-top;
+    margin-right: 3px;
+  }
+
+  #clear {
+    hr {
+      border-top: 1px solid #ccc;
+    }
+
+    #share-link {
+      margin-left: 10px;
+
+      background: none;
+      border: none; 
+      padding: 0;
+      font: inherit;
+      color: #337ab7;
+
+      &:hover {
+        color: #23527c;
+      }
+    }
+  }
+
+  #resource-categories,
+  #categories {
+    a.active {
+      color: #fff;
+      background-color: #F97352;
+      border-color: #cc5c43;
+    }
+  }
+
+  .modal-body {
+    #shorten-url {
+      margin-top: 15px;
+    }
+  }
+
+  #active-filters {
+    line-height: 30px;
+  }
+}
+
+/* vertically center modals */
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* header */
+.navbar-default {
+  background-color: $header-grey;
+  border: none;
+
+  .navbar-nav > .active > a, 
+  .navbar-nav > .active > a:hover, 
+  .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #3a3a3a;
+  }
+
+  #collapse-button {
+    margin-top: 20px;
+    border-color: #888;
+  }
+
+  @media (max-width: 991px) {
+    .navbar-nav .open .dropdown-menu > li > a {
+      color: #fff;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    .dropdown-menu .divider {
+      background-color: transparent;
+    }
+  }
+
+  #core-home {
+    #core-home-btn {
+      background-color: $orange;
+      color: $font-light-grey;
+
+      height: 72px;
+      line-height: 72px;
+      padding-top: 0;
+
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: 'Open Sans';
+      font-size: 13px;
+
+      .glyphicon {
+        margin-right: 6px;
+      }
+
+      &:hover {
+        background-color: #cc5c43;
+        border-color: #994332;
+      }
+    }
+  }
+
+  li.disabled a {
+    color: white !important;
+    opacity: 0.3;
+  }
+
+  .navbar-brand,
+  #main-menu li a,
+  #user-menu > a {
+    line-height: 72px;
+    height: 72px;
+    padding-top: 0;
+    color: $font-light-grey;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-size: 13px;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  #logo img {
+    height: 72px;
+    margin-right: 10px;
+  }
+
+  #user-menu {
+    &.open > a {
+      color: $orange;
+    }
+
+    a.dropdown-toggle {
+      background: none;
+    }
+
+    .dropdown-menu {
+      padding: 10px 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: 'Open Sans';
+      font-size: 13px;
+    }
+  }
+}
+
+/* overwrite bootstrap errors */
+.has-error .radio,
+.has-error .radio-inline,
+.has-error .checkbox,
+.has-error .checkbox-inline {
+  color: $font-grey;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-top: 1px solid #AAA;
+  line-height: 50px;
+}

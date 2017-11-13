@@ -1,0 +1,167 @@
+body.resources.edit {
+  #cancel {
+    margin-right: 5px;
+  }
+
+  #attachment {
+    margin-bottom: 15px;
+    
+    .attachment {
+      margin-top: 5px;
+    }
+
+    #attachment-upload {
+      .help-block {
+        margin-bottom: 5px;
+      }
+    }
+
+    #change-attachment-wrapper {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+body.resources.index {
+  #search_protocol_sections {
+    width: 200px;
+  }
+
+  .lead {
+    margin: 0px;
+  }
+
+  #resources-list {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+
+    li:first-child {
+      border-top: 1px solid #e5e5e1;
+    }
+
+    li {
+      padding: 18px 0px;
+      border-bottom: 1px solid #e5e5e1;
+
+      .resource-title a {
+        color: #F97352;
+        font-size: 16px;
+        text-decoration: none;
+        word-wrap: break-word;
+      }
+
+      .resource-description {
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+
+      .resource-details {
+        margin-top: 10px;
+        b {
+          color: #555;
+        }
+      }
+    }
+  }
+
+  #categories-cloud {
+    .tag-category {
+      margin: 15px 0;
+      font-size: 21px;
+      font-weight: 300;
+
+      small {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+    }
+  }
+}
+
+body.resources.show {
+  .lead {
+    word-wrap: break-word;
+    margin-bottom: 0px;
+  }
+
+  .average-rating {
+    margin-top: 2px;
+  }
+
+  .tags {
+    margin-top: 10px;
+  }
+
+  #resource-menu {
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #999;
+      font-family: 'Open Sans';
+      font-size: 14px;
+      padding-right: 5px;
+    }
+  }
+
+  #resource-text-snippet,
+  #resource-description {
+    .panel-body p:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  #reviews-container {
+    margin-top: 30px;
+
+    .user-review:first-child {
+      border-top: none;
+    }
+
+    .user-review {
+      min-height: 100px;
+      padding: 10px 0px;
+      border-top: 1px solid #eeeeee;
+
+      .user-details {
+        padding-left: 0px;
+
+        p {
+          font-family: 'Open Sans';
+          font-size: 16px;
+          font-weight: bold;
+          color: #777;
+          margin-bottom: 0px;
+        }
+
+        small {
+          color: #999;
+        }
+
+        .review-toolbar {
+          margin-top: 5px;
+
+          a {
+            text-decoration: none;
+            font-size: 12px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .rating {
+        font-size: 21px;
+        margin-bottom: 6px;
+        margin-top: -6px;
+
+        .glyphicon {
+          vertical-align: middle;
+        }
+
+        .review-date {
+          margin-left: 3px;
+          font-size: 14px;
+          color: #555;
+        }
+      }
+    }
+  }
+}

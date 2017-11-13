@@ -1,0 +1,21 @@
+#core-resources {
+  margin-top: 40px;
+  .lead {
+    margin: 35px 0;
+  }
+
+  .core-resource-link {
+    color: #333;
+    text-decoration: none;
+
+    .feature-icon {
+      color: #F97352;
+      font-size: 65px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      margin-bottom: 20px;
+    }
+  }
+}

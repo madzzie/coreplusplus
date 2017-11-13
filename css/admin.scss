@@ -1,0 +1,19 @@
+#admin-menu {
+  .list-group-item.active {
+    background-color: #F97352;
+    border-color: #cc5c43;
+  }
+}
+
+.tag-category-menu {
+  margin-top: 5px;
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding-right: 5px;
+  }
+}

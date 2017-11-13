@@ -1,0 +1,172 @@
+body.forums.show {
+  #forum-menu {
+    .lead {
+      margin-bottom: 0px;
+    }
+  }
+
+  #topics {
+    thead tr th {
+      font-family: 'Open Sans';
+      text-transform: uppercase;
+    }
+
+    .subject a {
+      color: #F97352;
+      font-size: 16px;
+      text-decoration: none;
+    }
+
+    .label {
+      vertical-align: text-top;
+    }
+  }
+}
+
+#topic-title {
+  #title-phantom {
+    visibility: hidden;
+    margin-left: -15px;
+  }
+
+  #title {
+    margin-left: -15px;
+    word-wrap: break-word;
+
+    .lead {
+      margin-bottom: 10px;
+    }
+  }
+
+  #title.stick {
+    position: fixed;
+    top: 72px;
+    z-index: 1000;
+    background-color: white;
+
+    .lead {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    hr {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      border-color: #F97352;
+    }
+
+    #topic-top {
+      margin-top: 10px;
+    }
+  }
+}
+
+.topic-menu {
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding-right: 5px;
+  }
+
+  .glyphicon {
+    margin-right: 5px;
+  }
+
+  .reply-question {
+    margin-right: 5px;
+  }
+}
+
+#post_1 {
+  border: 1px solid #666;
+  background-color: #eee;
+
+  .user {
+    .user-name,
+    .user-details {
+      color: #494949;
+    }
+  }
+
+  .post-content {
+    border-left: 1px solid #666;
+
+    .attachment {
+      a {
+        border: 1px solid #999;
+        background-color: #fff;
+        color: #666;
+
+        .glyphicon-paperclip {
+          color: #888;
+        }
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid #bbb;
+  }
+
+  blockquote {
+    border-left: 5px solid #bbb;
+  }
+}
+
+.post {
+  border: 1px solid #eee;
+  min-height: 120px;
+  padding: 0px;
+  margin-bottom: 20px;
+
+  .user {
+    padding: 15px;
+
+    .user-name {
+      font-family: 'Open Sans';
+      font-size: 16px;
+      font-weight: bold;
+      color: #777;
+      margin-bottom: 5px;
+    }
+
+    .user-details {
+      color: #999;
+    }
+  }
+
+  .post-content {
+    border-left: 1px solid #eee;
+    padding: 10px 20px 15px 20px;
+    min-height: 120px;
+    word-wrap: break-word;
+
+    .time-posted {
+      margin-bottom: 10px;
+    }
+
+    .attachment {
+      margin-top: 15px;
+    }
+
+    .post-toolbar {
+      margin-top: 30px;
+
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #999;
+        font-family: 'Open Sans';
+        font-size: 12px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+#edit-post-back {
+  margin-right: 10px;
+}

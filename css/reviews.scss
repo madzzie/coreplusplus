@@ -1,0 +1,85 @@
+#reviews-header {
+  font-size: 21px;
+  color: #F56747;
+
+  #resource-title {
+    font-weight: 300;
+    color: #333;
+  }
+}
+
+#write-review {
+  margin-bottom: 15px;
+
+  #description {
+    color: #777;
+    font-size: 13px;
+  }
+
+  .star-redirect {
+    text-decoration: none;
+    font-size: 0;
+  }
+
+  #member-rating-input {
+    line-height: 1px;
+
+    label > input {
+      visibility: hidden;
+      position: absolute;
+    }
+
+    label {
+      margin-bottom: 0px;
+    }
+
+    .glyphicon {
+      cursor: pointer;
+      font-size: 27px;
+      padding-right: 2px;
+    }
+  }
+
+  .review_comment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    margin-top: 5px;
+  }
+}
+
+.average-rating {
+  margin-bottom: 8px;
+  
+  .glyphicon {
+    font-size: 20px;
+    vertical-align: text-bottom;
+  }
+
+  .reviews-count {
+    margin-left: 3px;
+    font-size: 14px;
+    color: #777;
+  }
+}
+
+.glyphicon-star {
+  color: #FFBE00;
+}
+
+.glyphicon-star-empty {
+  color: #bbb;
+}
+
+body.reviews.edit {
+  #reviews-header {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  #cancel {
+    margin-right: 5px;
+  }
+}

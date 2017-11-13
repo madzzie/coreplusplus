@@ -1,0 +1,145 @@
+body.users.resources {
+  th {
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+  }
+
+  td.resource-title {
+    a {
+      color: #F97352;
+      text-decoration: none;
+      word-wrap: break-word;
+    }
+  }
+
+  td.resource-options {
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #999;
+      font-family: 'Open Sans';
+      font-size: 14px;
+      padding-right: 5px;
+    }
+  }
+}
+
+body.users.index {
+  #users-count {
+    color: #777;
+    font-size: 16px;
+  }
+
+  #users {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding-left: 0px;
+    list-style: none;
+
+    .users-group {
+      margin-bottom: 10px;
+    }
+
+    .month {
+      margin-top: 3px;
+
+      width: 1px;
+      word-wrap: break-word;
+      font-family: 'Inconsolata';
+
+      line-height: 0.9;
+      text-transform: uppercase;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .list-institution {
+      font-size: 12px;
+      color: #777;
+    }
+
+    li {
+      margin-bottom: 5px;
+
+      a {
+        text-decoration: none;
+
+        &:focus {
+          color: #337ab7;
+        }
+      }
+    }
+  }
+
+  /* Dynamic resizing for affixed element */
+  @media (min-width: 768px)  { #user-details { width: 470px; } }
+  @media (min-width: 992px)  { #user-details { width: 616.656px; } }
+  @media (min-width: 1200px) { #user-details { width: 750px; } }
+
+  #user-details {
+    margin-top: 0px;
+
+    &.affix {
+      top: 92px;
+    }
+
+    #instructions {
+      margin: 20px 0;
+    }
+
+    .media {
+      margin-bottom: 20px;
+
+      .media-left {
+        padding-right: 15px;
+      }
+    }
+
+    dl {
+      margin-bottom: 0px;
+      max-height: 310px;
+      overflow: auto;
+      position: relative;
+
+      dd {
+        margin-bottom: 5px;
+      }
+
+      dd:last-child {
+        margin-bottom: 0px;
+      }
+
+      ul {
+        margin-bottom: 0px;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  #scroll-tip {
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;
+    width: 200px;
+
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -50px;
+    
+    opacity: 0.85;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -8px;
+      border-width: 8px;
+      border-style: solid;
+      border-color: #000 transparent transparent transparent;
+    }
+  }
+}
